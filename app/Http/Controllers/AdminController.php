@@ -22,12 +22,15 @@ class AdminController extends Controller
     	$posts = Post::all();
     	$messages = Message::all();
     	$comments = Comment::all();
-    	$counter  = Post::selectRaw("year(created_at) year, month(created_at) month, sum(counter) data")
-					->groupBy('year','month')
-					->orderBy('year','DESC')
-					->orderBy('month','DESC')
-					->take(12)
-					->get();
+    	$counter  = '';
+    	if ($posts->count()) {
+	    	$counter  = Post::selectRaw("year(created_at) year, month(created_at) month, sum(counter) data")
+						->groupBy('year','month')
+						->orderBy('year','DESC')
+						->orderBy('month','DESC')
+						->take(12)
+						->get();
+    	}
     	return view('admin.dashboard', compact('users','posts','messages','comments','counter'));
     }
 
