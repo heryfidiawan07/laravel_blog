@@ -1,0 +1,44 @@
+.bold {
+	font-weight: bold;
+}
+.bg-silver {
+	background-color: silver;
+}
+.bg-GainsBoro {
+	background-color: #DCDCDC;
+}
+
+.fa-facebook {
+    color: #3b5999;
+}
+.fa-twitter {
+    color: #55acee;
+}
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-envelope {
+    color: grey;
+}
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+.fa-linkedin-in {
+    color: #0077B5;
+}
+.fa-pinterest {
+    color: #bd081c;
+}
+.fa-phone {
+    color: #007ee5;
+}
+.fa-comment-alt {
+    color: #f57d00;
+}
+.fa-youtube {
+    color: #cd201f;
+}

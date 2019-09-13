@@ -1,0 +1,144 @@
+img {
+	max-width: 100%;
+}
+.card-overlay {
+	overflow: hidden;
+}
+.card-overlay img {
+  transition: .5s ease;
+}
+.card-overlay:hover img {
+	transform: scale(1.1);
+}
+.text-post-show {
+	font-size: 17px;
+}
+.col-post-parent-and-childs {
+	padding: 1px;
+}
+#img-post-parent {
+	height: 445px;
+}
+#img-post-childs {
+	height: 220px;
+}
+#img-post-sticky {
+	height: 220px;
+}
+#img-post-news {
+	height: 200px;
+}
+#img-post-popular-comment {
+	height: 100px;	
+}
+#img-post-show {
+	max-width: 100%;
+	height: 400px;
+}
+.frame-title-post-news p {
+	font-size: 14px;
+}
+.frame-title-post-news {
+	height: 45px;
+	overflow-y: hidden;
+}
+.frame-title-post-popular-comment p {
+	font-size: 14px;
+}
+.frame-title-post-popular-comment {
+	height: 45px;
+	overflow-y: hidden;
+}
+
+.frame-post-popular-comment {
+	max-height: 380px;
+	overflow-y: auto;
+}
+.frame-latest-comment {
+	max-height: 380px;
+	overflow-y: auto;
+}
+
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.test {
+		background-color: red; position: fixed; z-index: 1000;
+	}
+	#img-post-parent {
+		height: 250px;
+	}
+	#img-post-childs {
+		height: 250px;
+	}
+	#img-post-popular-comment {
+		height: 170px;	
+	}
+	#img-post-show {
+		height: 300px;
+	}
+	.frame-parent-popular-comment {
+		margin-top: 30px;
+	}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.test {
+		background-color: yellow; position: fixed; z-index: 1000;
+	}
+	#img-post-sticky {
+		height: 250px;
+	}
+	.frame-parent-popular-comment {
+		margin-top: 30px;
+	}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.test {
+		background-color: pink; position: fixed; z-index: 1000;
+	}	
+	#img-post-parent {
+		height: 345px;
+	}
+	#img-post-childs {
+		height: 170px;
+	}
+	#img-post-news {
+		height: 220px;
+	}
+	#img-post-popular-comment {
+		height: 150px;	
+	}
+	.frame-parent-popular-comment {
+		margin-top: 30px;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.test {
+		background-color: blue; position: fixed; z-index: 1000;
+	}
+	#img-post-news {
+		height: 150px;
+	}
+	.frame-post-popular-comment {
+		max-height: 335px;
+		overflow-y: auto;
+	}
+	.frame-latest-comment {
+		max-height: 335px;
+		overflow-y: auto;
+	}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.test {
+		background-color: green; position: fixed; z-index: 1000;
+	}	
+}
